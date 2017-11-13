@@ -61,7 +61,7 @@ function creatFaders(Nfad) {
 
 /////////////////////////////////////////////////////////////////////
 function ShowOutPortlist() {
-	portOut.forEach(function (port, i) {
+	outlist.forEach(function (port, i) {
 
 		optiosss += '<option  value="' + i + '"class="' + 'Oport' + i + ' portcla ">' + 'port' + port.name + '</option>';
 	});

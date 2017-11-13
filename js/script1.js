@@ -52,7 +52,7 @@ function () {
 				// create list of all currently connected MIDI devices
 				showMIDIPorts();
 				CreateControles(8);
-				listFader();
+				
 				
 //myFunction1();
 				// update the device list when devices get connected, disconnected, opened or closed
