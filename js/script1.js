@@ -51,7 +51,8 @@ function () {
 
 				// create list of all currently connected MIDI devices
 				showMIDIPorts();
-				CreateControles(8);
+				//CreateControles(8);
+				LoadFades();
 				
 				
 //myFunction1();

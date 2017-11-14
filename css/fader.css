@@ -9,12 +9,13 @@ padding: 0px;
 .fads1g{
 width: 992px;
  	border: 2px solid #BBB;
- 	overflow: auto;
+ 	
  	float: left;
  	margin: 0px;
- 	padding: 0x;
- 	
-
+	position: relative;
+ 	padding: 0px;
+ 	padding-top: 1em;
+padding-bottom: 1em;
 
 }
 /*#geral1{
@@ -23,18 +24,18 @@ border: 2px solid #BBB;
 }*/
 
 .clasize{
-width: 87.5px;
+width: 106.8px;
 	
 	/*display: inline-block;*/
-	height: 369px;
+	height: 325.6px;
 	border: 2px solid #BBB;
 overflow: auto;
 	resize: inherit;
-
+padding: 5px;
  	float: left;
- margin:1em;
+ margin-right: 12.9px ;
 	
- 	padding: 1px;
+ 	
 
 }
 
@@ -42,7 +43,7 @@ overflow: auto;
 
 select.form-control-sm{
     font-size: 10px;
-    width: 78px;
+    width: 95px;
 	height: 31px;
 	margin: 0px;
 	padding: 0px;
@@ -72,8 +73,8 @@ input[type=range] {
 	 width: 195px;
   height: 20px;
  	position: relative;
- top: 112px;
-	right: 58.7px;
+ top: 103px;
+	right: 59.6px;
 	transform: rotate(-90deg);
 	
 }

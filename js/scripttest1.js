@@ -38,7 +38,15 @@ function CreateSell(Dorph) {
 	};
 
 }
+/////////////////////////////////////////////////////////////////////
+function ShowOutPortlist() {
+	outlist.forEach(function (port, i) {
 
+		optiosss += '<option  value="' + i + '"class="' + 'Oport' + i + ' portcla ">' + port.name + '</option>';
+	});
+	console.log(optiosss);
+	return optiosss;
+}
 /////////////////////////////////////////////////////////////////////
 function creatDIV(NdiV) {
 	for (var i = 0; i < NdiV; i++) {
@@ -59,15 +67,7 @@ function creatFaders(Nfad) {
 	return CreFaders;
 }
 
-/////////////////////////////////////////////////////////////////////
-function ShowOutPortlist() {
-	outlist.forEach(function (port, i) {
 
-		optiosss += '<option  value="' + i + '"class="' + 'Oport' + i + ' portcla ">' + port.name + '</option>';
-	});
-	console.log(optiosss);
-	return optiosss;
-}
 /////////////////////////////////////////////////////////////////////
 function CreateCC() {
 	for (var i = 1; i <= 127; i++) {
@@ -266,6 +266,9 @@ devicesInfcha*/
 
 /////////////////////////////////////////////////////////////////////
 
+////  lista os estados e valores cos faders
+
+
 function sho() {
 	
 	Selectss.forEach(function (currentValue, i) {
@@ -324,9 +327,17 @@ function sho() {
 
 
 
-function sendMidi(){
+function LoadFades(){
 
-
+CreateControles(8);
+	if(Selectss.length > 0){
+	   
+	   listFader();
+	   
+	   } else {
+	   
+	   alert("Not Load");
+	   }
 
 
 }
