@@ -29,11 +29,11 @@ function CreateSell(Dorph) {
 	creatFaders(Dorph);
 	for (var i = 0; i < Dorph; i++) {
 
-		Selectss[i] = '<select id="' + 'selportPort' + i + ' "  class="form-control">' + optiosss + '</select>';
+		Selectss[i] = '<select id="' + 'selportPort' + i + ' "  class="form-control-sm">' + optiosss + '</select>';
 
-		SelectssCC[i] = '<select id="' + 'selCC' + i + ' "  class="form-control">' + conTro + '</select>';
+		SelectssCC[i] = '<select id="' + 'selCC' + i + ' "  class="form-control-sm">' + conTro + '</select>';
 
-		SelectssCH[i] = '<select id="' + 'chid' + i + ' "  class="form-control">' + optchannels + '</select>';
+		SelectssCH[i] = '<select id="' + 'chid' + i + ' "  class="form-control-sm">' + optchannels + '</select>';
 
 	};
 
@@ -63,7 +63,7 @@ function creatFaders(Nfad) {
 function ShowOutPortlist() {
 	outlist.forEach(function (port, i) {
 
-		optiosss += '<option  value="' + i + '"class="' + 'Oport' + i + ' portcla ">' + 'port' + port.name + '</option>';
+		optiosss += '<option  value="' + i + '"class="' + 'Oport' + i + ' portcla ">' + port.name + '</option>';
 	});
 	console.log(optiosss);
 	return optiosss;

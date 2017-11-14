@@ -20,20 +20,26 @@
  	margin: 0;
  	padding: 0;
  	background-color: rgb(49, 49, 49);
-	 resize: both;
+	
  }
+/*.fads1g{
+float: left;
+order: 2px solid #BBB;
+
+
+}*/
 
 div.mold {
-resize: inherit;
+resize: both;
 }
 
  h4.tite {
  	font-family: "OpenSans";
 
  	color: whitesmoke;
-
+font-size: 12px;
  	margin-bottom: 7px;
- 	margin: 15px;
+ 	margin: 4px;
  	align-content: center;
  	text-align: center;
  }
@@ -55,13 +61,13 @@ resize: inherit;
  div.bbb {
  	font-family: "OpenSans";
  	color: whitesmoke;
- 	font-size: 14px;
+ 	font-size: 9px;
  	border: 2px solid #BBB;
- 	width: 215px;
- 	height: 28px;
+ 	width: 150px;
+ 	height: 18px;
 
  	overflow: auto;
- 	margin: 1em;
+ 	margin: 3.8em;
  	padding: 0px;
  	margin-bottom: -1px;
  	margin-top: -1px;
@@ -69,14 +75,14 @@ resize: inherit;
 
  div.eee {
  	font-family: "OpenSans";
- 	font-size: 14px;
+ 	font-size: 9px;
  	color: whitesmoke;
  	border: 2px solid #BBB;
- 	width: 215px;
- 	height: 28px;
+ 	width: 150px;
+ 	height: 18px;
 
  	overflow: auto;
- 	margin: 1em;
+ 	margin: 3.8em;
  	padding: 0px;
  	margin-bottom: -1px;
  	margin-top: -1px;
@@ -85,8 +91,9 @@ resize: inherit;
 
  div.aaa {
  	border: 2px solid #BBB;
- 	width: 240px;
- 	min-height: 200px;
+ 	width: 222px;
+ 	/*min-height: 0px;*/
+	 height: 173px;
  	max-height: 500px;
  	overflow: auto;
  	float: left;
@@ -97,8 +104,9 @@ resize: inherit;
  div.ddd {
 
  	border: 2px solid #BBB;
- 	width: 240px;
- 	min-height: 200px;
+ 	width: 222px;
+	height: 173px; 
+ 	/*min-height: 0x;*/
  	max-height: 500px;
  	overflow: auto;
  	padding: 0px;
@@ -107,16 +115,17 @@ resize: inherit;
 
  .ccc {
 
- 	width: auto;
+ 	width: inherit;
+	 
  	border: 2px solid #BBB;
  	overflow: auto;
  	float: left;
  	margin: 0px;
  	padding: 0px;
- 	margin-right: 0px;
+ 	
  }
 
- .ggg {
+.ggg {
 
  	
  	border: 2px solid #BBB;
@@ -133,7 +142,7 @@ resize: inherit;
  	color: whitesmoke;
  	align-content: center;
  	text-align: left;
- 	width: 532px;
+ 	width: 495.5px;
  	min-height: 200px;
  	max-height: auto;
  	border: 2px solid #BBB;
@@ -144,12 +153,12 @@ resize: inherit;
  }
 
  .mold {
- 	width: inherit;
- 	border: 2px solid #ccc;
+ 	
+ 	/*border: 2px solid #ccc;*/
  	position: absolute;
- 	display: block;
+ 	
  	top: 14em;
- 	padding: 27px;
+
 
  }
 

@@ -25,6 +25,7 @@ width: auto;
 .piano-key {
 	float: left;
 	border-radius: 0 0 4px 4px;
+	display: block;
 }
 
 .piano-key-natural {
@@ -71,7 +72,10 @@ width: auto;
 }
 
 @media (max-width: 1200px) {
+	#piano_key_B5,
+	#piano_key_A5,
 	.piano-key-octave-0,
+	/*.piano-key-octave-4,*/
 	.piano-key-octave-1,
 	.piano-key-octave-6,
 	.piano-key-octave-7,
@@ -80,20 +84,20 @@ width: auto;
 	}
 }
 
-@media (max-width: 760px) {
+/*@media (max-width: 760px) {
 	
 	.piano-key-octave-2,
 .piano-key-octave-5 {
 		display: none;
-	}
-}
+	}*/
 
 
-@media (max-width: 90px) {
+
+/*@media (max-width: 90px) {
   .piano-key-octave-7 {
     display: none;
   }
-}
+}*/
 /*
 @media (max-width: 110px) {
   .piano-key-octave-2 {
