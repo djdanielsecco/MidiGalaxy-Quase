@@ -92,10 +92,10 @@ font-size: 12px;
  div.aaa {
  	border: 2px solid #BBB;
  	width: 222px;
- 	/*min-height: 0px;*/
+ 	min-height: 0px;
 	 height: 173px;
  	max-height: 500px;
- 	overflow: auto;
+ 	
  	float: left;
  	margin: 1em;
  	padding: 0px;
@@ -106,9 +106,9 @@ font-size: 12px;
  	border: 2px solid #BBB;
  	width: 222px;
 	height: 173px; 
- 	/*min-height: 0x;*/
+ 	min-height: 0x;
  	max-height: 500px;
- 	overflow: auto;
+ 	overflow: hidden;
  	padding: 0px;
  	margin: 1em;
  }
