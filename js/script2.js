@@ -7,13 +7,14 @@ var bb,
 function myFunction(aas) {
 	bb = aas;
 	console.log('oooooooiiii' + bb);
+	return bb;
 } 
 
 
 (function (window, document, undefined) {
 
 
-	var notes, midi, currentInput, tarima, popo, zeca;
+	var notes, midi, currentInput,  zeca;
 
 	function onMidiMessage(msg) {
 		var action = isNoteOffMessage(msg) ? 'remove' : isNoteOnMessage(msg) ? 'add' : null,
@@ -115,23 +116,39 @@ outlist = outputs
 		}).then(onMIDIAccessSuccess, onMIDIAccessFail);
 	} else {
 		console.error('Your device doesn\' support WebMIDI or its polyfill');
-	}
-    var ddd1 =document.getElementById("piui");
-	ddd1.addEventListener("mousedown", function () {
-		tarima = document.getElementsByClassName('piano-key');
-		popo = tarima[bb].dataset.note;
-		divLog12.innerHTML = "noteon  " + popo + '<br>' + divLog12.innerHTML;
-		console.log('noteon  ' + popo);
 		
-
+		
+		
+		
+	}
+	
+	document.getElementById("piui").addEventListener('input', function () {
+	var oiuyt = document.activeElement;
+		console.log(oiuyt + '<------------------');
+	
+	
+	},false);
+	
+    var ddd1 = document.getElementById("piui");
+	ddd1.addEventListener("mousedown", function () {
+	var	peps;
+	var	tarima1 = document.getElementsByClassName('piano-key');
+		peps = tarima1[bb].dataset.note;
+		divLog12.innerHTML = "noteon  " + peps + '<br>' + divLog12.innerHTML;
+		console.log('noteon  ' + peps);
+		WebMidi.outputs[seloutportvirtual].playNote(peps,seloutportvirtual1);
+peps=null;
 	}, false);
 	
 	
 	ddd1.addEventListener("mouseup", function () {
-		tarima = document.getElementsByClassName('piano-key');
-		popo = tarima[bb].dataset.note;
-		divLog12.innerHTML = "noteoff  " + popo + '<br>' + divLog12.innerHTML;
-		console.log('noteoff  ' + popo);
+		var	torts ;
+	var	tarima1 = document.getElementsByClassName('piano-key');
+		torts = tarima1[bb].dataset.note;
+		divLog12.innerHTML = "noteoff  " + torts + '<br>' + divLog12.innerHTML;
+		console.log('noteoff  ' + torts);
+		WebMidi.outputs[seloutportvirtual].stopNote(torts,seloutportvirtual1);
+	torts = null;
 		}, false);
 
 	document.addEventListener('DOMContentLoaded', function () {

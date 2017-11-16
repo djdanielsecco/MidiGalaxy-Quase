@@ -2,6 +2,8 @@
 Escopo Global
 */
 var HTm = document.getElementById('geral1');
+var listkeyssel = document.getElementById('keysel');
+var LISTCHANKEY = document.getElementById('chansel');
 var divdevices = []; // divisoes para o css
 var Selectss = []; // Select Ports
 var SelectssCC = []; // Select CC
@@ -99,8 +101,8 @@ function CreateControles(numeControles) {
 		ploc[i].innerHTML = Selectss[i] +
 			SelectssCC[i] + SelectssCH[i] + CreFaders[i];
 	};
-
-
+listkeyssel.innerHTML += optiosss;
+LISTCHANKEY.innerHTML += optchannels;
 }
 /////////////////////////////////////////////////////////////////////
 
@@ -187,8 +189,40 @@ function listFader() {
 	}
 
 	Getdata();
+	tarima();
+	tarima2();
+	
 }
 
+/////////////////////////////////////////////////////////////////////
+function tarima(){
+listkeyssel.addEventListener('input', function () {
+	var keysselc =  document.activeElement;
+	
+		
+seloutportvirtual = keysselc.value;
+			console.log(seloutportvirtual + '  porta virtual');
+		return seloutportvirtual;
+	
+	},false);
+
+
+}
+
+
+function tarima2(){
+LISTCHANKEY.addEventListener('input', function () {
+	var TREWS =  document.activeElement;
+	
+		
+seloutportvirtual1 = TREWS.value;
+			console.log(seloutportvirtual1 + '  porta virtual');
+		return seloutportvirtual1;
+	
+	},false);
+
+
+}
 /////////////////////////////////////////////////////////////////////
 
 

@@ -126,15 +126,44 @@ font-size: 12px;
  }
 
 .ggg {
-
- 	
- 	border: 2px solid #BBB;
- 	overflow: auto;
+width: auto;
+ 	font-family: "OpenSans";
+	height: 36.5px;
+ 	font-size: 9px;
+ 	color: whitesmoke;
+	align-content: center;
+ 	text-align: left;
+ 	border-bottom: 2px solid #BBB;
+ 	/*overflow: auto;*/
  	float: left;
- 	margin: 0px;
- 	padding: 0px;
- 	margin-right: 0px;
+ 	
  }
+#keysel  {
+	width: 176px;
+margin-top: 2px;
+margin-left : 20px;
+
+
+
+}
+
+#chansel  {
+	width: 80px;
+margin-top: 2px;
+margin-left : 20px;
+
+
+
+}
+#par1{
+	width: auto;
+	position: relative;
+	top: 10.1px;
+/*margin-top: 5px;*/
+}
+
+
+
 
  div.fff {
  	font-family: "OpenSans";
