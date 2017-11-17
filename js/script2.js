@@ -122,12 +122,12 @@ outlist = outputs
 		
 	}
 	
-	document.getElementById("piui").addEventListener('input', function () {
+/*	document.getElementById("piui").addEventListener('input', function () {
 	var oiuyt = document.activeElement;
 		console.log(oiuyt + '<------------------');
 	
 	
-	},false);
+	},false);*/
 	
     var ddd1 = document.getElementById("piui");
 	ddd1.addEventListener("mousedown", function () {
