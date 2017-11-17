@@ -28,6 +28,14 @@ order: 2px solid #BBB;
 
 
 }*/
+#checkbox6 {
+	box-sizing: 12px;
+border-radius: 50%;
+ border: 1px solid #a9a9a9;
+ -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
 
 div.mold {
 resize: both;

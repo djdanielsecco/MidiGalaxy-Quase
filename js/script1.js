@@ -372,7 +372,7 @@ function () {
 			}
 		}
 
-		if (tarimai.cmd === 9 && midimessageEvent.data[2] > 0) {
+		if (tarimai.cmd === 9 && midimessageEvent.data[2] > 0 && checkaudio === false) {
 			playNote(tarimai.frequency);
 
 		}

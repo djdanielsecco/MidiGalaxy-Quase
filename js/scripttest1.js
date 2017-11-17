@@ -4,6 +4,9 @@ Escopo Global
 var HTm = document.getElementById('geral1');
 var listkeyssel = document.getElementById('keysel');
 var LISTCHANKEY = document.getElementById('chansel');
+var faderLiveCC = document.getElementById('con15');
+var faderLiveDATA = document.getElementById('con16');
+var faderLiveCHN = document.getElementById('con17');
 var divdevices = []; // divisoes para o css
 var Selectss = []; // Select Ports
 var SelectssCC = []; // Select CC
@@ -22,6 +25,7 @@ var devicesInfPor = [];
 var devicesInfcc = [];
 var devicesInfComan = [];
 var devicesInfcha = [];
+var checkboxes, checkaudio = false;
 /////////////////////////////////////////////////////////////////////
 function CreateSell(Dorph) {
 	ShowOutPortlist();
@@ -136,6 +140,9 @@ function listFader() {
 			
 			CreateMidiMensage(getglobPort, getblobCC, getGlobControlr, getGlobCha);
 			//sho();
+			faderLiveDATA.innerHTML = "DATA2: " + findlist.value + '<br>' + faderLiveDATA.innerHTML;
+				faderLiveCC.innerHTML = "CC: " + devicesInfcc[popo] + '<br>' + faderLiveCC.innerHTML;
+			faderLiveCHN.innerHTML = "CH: " + devicesInfcha[popo] + '<br>' + faderLiveCHN.innerHTML;
 			return getGlobControlr;
 
 
@@ -169,6 +176,7 @@ function listFader() {
 			getblobCC = cccc;
 			//console.log(cccc.value + '   ' + cccc.id);
 			sho();
+			
 			return getblobCC;
 
 
@@ -205,7 +213,16 @@ seloutportvirtual = keysselc.value;
 		return seloutportvirtual;
 	
 	},false);
-
+checkboxes = document.getElementById('checkbox6');
+		
+			
+			checkboxes.addEventListener('change', function(){
+			var tatata1 = document.activeElement;
+				checkaudio = tatata1.checked;
+			console.log(checkboxes.checked);
+			return checkaudio;
+			}, false);
+		
 
 }
 
